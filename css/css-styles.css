@@ -65,7 +65,12 @@ button,a{outline:none;}
 .C-container{
 	height: 100%;
 	position: relative;
-	border: 1px solid red;
+}
+.C-container.bgImage{
+	background-image: url('../images/kungGroup-bg.png');
+    background-repeat: no-repeat;
+    background-position: -10% center;
+    background-size: contain;
 }
 .C-container80{width: 80%; margin: 0 auto;}
 .C-formContainer{
@@ -248,9 +253,73 @@ button,a{outline:none;}
 .modalCustome .modal-header{border: 0;}
 
 /* ------------------------------
+  Component :: Header
+---------------------------------*/
+.C-header{
+	display: block; 
+	height: 80px;
+	padding: 25px 0;
+	position: relative;
+	border-bottom: 1px solid red;
+}
+.C-headerNav ul{
+	display: inline-block;
+	padding: 0;
+	margin: 3px 0 0;
+	list-style: none;
+}
+.C-headerNav li{display: inline-block;}
+.C-headerNav li a{
+	border-bottom: 1px solid transparent;
+	color: #333333;
+	display: block;
+	font-size: 14px;
+	font-weight: 500;
+	text-transform: uppercase;
+	letter-spacing: 0.5px;
+	line-height: 23px;
+	text-decoration: none;
+	outline: none;
+	transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-webkit-transition: all ease 0.3s;
+}
+.C-headerNav li.st-active a,
+.C-headerNav li a:hover{border-color: #35cc62;}
+.C-headerNav.side-left{text-align: left;}
+.C-headerNav.side-right{text-align: right;}
+.C-headerNav.side-left li{margin-right: 40px;}
+.C-headerNav.side-right li{margin-left: 40px;}
+
+.C-logo{
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+	height: 30px;
+	width: 30px;
+}
+.C-logo img{
+	display: block;
+	height: 30px;
+	width: 30px;
+}
+
+@media only screen and (max-width: 768px) {
+	.C-header{height: auto;}
+	.C-headerNav.side-left,
+	.C-headerNav.side-right{text-align: left;}
+	.C-headerNav ul,
+	.C-headerNav ul li{display: block;}
+	.C-headerNav li,
+	.C-headerNav.side-left li,
+	.C-headerNav.side-right li{margin: 0 0 10px;}
+	.C-headerNav li a{display: block; font-size: 12px; font-weight: 600;}
+}
+
+/* ------------------------------
   Utilities Settings
 ---------------------------------*/
-	.text-colored{color:#990000;}.text-bold{font-weight:700;}.text-center{text-align:center;}
+	.text-bold{font-weight:600;}.text-center{text-align:center;}
 	.text-uppercase{text-transform: uppercase;}
 	.nomargin{margin:0!important;}.margin0-bottom{margin-bottom:0px;}.margin10-bottom{margin-bottom:10px;}.margin25-bottom{margin-bottom:25px;}
 	.margin20-right{margin-right:20px;}.margin20-top{margin-top:20px;}
