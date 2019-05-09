@@ -237,12 +237,14 @@ button,a{outline:none;}
 	font-size: 14px;
 	font-weight: 500;
 	height: 48px;
+	width: 213px;
 	line-height: 20px;
 	padding: 12px 40px;
 	border-radius: 2px;
 	-moz-border-radius: 2px;
 	-webkit-border-radius: 2px;
 }
+.btn.btnCustome.sm{width: auto;}
 .btn.btnCustome .icon{
     color: #fff;
     display: inline-block;
