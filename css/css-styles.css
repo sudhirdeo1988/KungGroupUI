@@ -244,7 +244,22 @@ button,a{outline:none;}
 	-moz-border-radius: 2px;
 	-webkit-border-radius: 2px;
 }
-.btn.btnCustome.sm{width: auto;}
+.btn.btnBordered{
+	background-color: transparent;
+	border:1px solid #35cc62;
+	color: #35cc62;
+	font-size: 14px;
+	font-weight: 500;
+	height: 48px;
+	width: 213px;
+	line-height: 20px;
+	padding: 12px 40px;
+	border-radius: 2px;
+	-moz-border-radius: 2px;
+	-webkit-border-radius: 2px;
+}
+.btn.btnCustome.sm,
+.btn.btnBordered.sm{width: auto; min-width: 130px;}
 .btn.btnCustome .icon{
     color: #fff;
     display: inline-block;
@@ -305,7 +320,6 @@ button,a{outline:none;}
 	height: 80px;
 	padding: 25px 0;
 	position: relative;
-	border-bottom: 1px solid red;
 }
 .C-headerNav ul{
 	display: inline-block;
@@ -437,6 +451,21 @@ button,a{outline:none;}
 }
 
 
+.C-dataTable table{text-align: left;}
+.C-dataTable table thead th{
+	color: #fff;
+	font-size: 15px;
+	font-weight: 500;
+	line-height: normal;
+	padding: 15px 9px;
+}
+.C-dataTable.st-colored table th{background-color: #35cc62; color: #fff;}
+.C-dataTable table td{
+	padding: 10px 9px;
+	color: #333333;
+	font-size: 14px;
+	font-weight: 300;
+}
 /* ------------------------------
   Component :: Progress Bar
 ---------------------------------*/
@@ -480,6 +509,7 @@ button,a{outline:none;}
 	.nomargin{margin:0!important;}.margin0-bottom{margin-bottom:0px;}.margin10-bottom{margin-bottom:10px;}.margin25-bottom{margin-bottom:25px;}
 	.margin20-right{margin-right:20px;}.margin20-top{margin-top:20px;}
 	.nopad{padding:0!important;}.pad20-right{padding-right:20px;}.pad20-left{padding-left:20px;}
+	.pad0-bottom{padding-bottom:0;}.pad10-bottom{padding-bottom:10px;}
 	.noborder{border:0;}
 	.height-auto{height: auto; overflow: hidden;}.height-100{height: 100%;}
 	.vAlign_top{vertical-align: top;}.vAlign_middle{vertical-align: middle;}.vAlign_bottom{vertical-align: bottom;}
