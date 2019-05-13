@@ -5,6 +5,7 @@
 (function ($) {
  "use strict";
 	
+	// -------- Data Table
 	if($(".C-dataTable.fix--head").length){
 		$('.C-dataTable.fix--head table').DataTable( {
 	        scrollY:        '50vh',
@@ -16,7 +17,10 @@
     	} );
 	}
 
-	$('.C-optionCard').popover();
+	// -------- Popover
+	if($(".C-optionCard").length){
+		$('.C-optionCard').popover();
+	}
 	
 	
 })(jQuery);
