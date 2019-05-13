@@ -15,6 +15,8 @@
     		info: false
     	} );
 	}
+
+	$('.C-optionCard').popover();
 	
 	
 })(jQuery);

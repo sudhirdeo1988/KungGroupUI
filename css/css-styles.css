@@ -38,6 +38,12 @@ font-family: 'Montserrat', sans-serif;
 .kg-android-close:before {
   content: "\6a";
 }
+.kg-tick:before {
+  content: "\6b";
+}
+.kg-add:before {
+  content: "\6c";
+}
 
 /* ------------------------------
 2. Reset Styles
@@ -460,12 +466,17 @@ button,a{outline:none;}
 	padding: 15px 9px;
 }
 .C-dataTable.st-colored table th{background-color: #35cc62; color: #fff;}
-.C-dataTable table td{
+.C-dataTable table tbody td{
+	border:0;
 	padding: 10px 9px;
 	color: #333333;
 	font-size: 14px;
 	font-weight: 300;
 }
+.C-dataTable table tr:nth-child(odd){
+	background-color: #fafafa;
+}
+.C-dataTable table.dataTable{margin-top: 0 !important;}
 /* ------------------------------
   Component :: Progress Bar
 ---------------------------------*/
@@ -500,6 +511,53 @@ button,a{outline:none;}
 	-moz-border-radius: 7.5px;
 	-webkit-border-radius: 7.5px;
 }
+
+
+.sessionMessage_img{
+	border:1px solid #35cc62;
+	display: block;
+	height: 91px;
+	width: 91px;
+	padding: 16px 17px;
+	text-align: center;
+	margin:0 auto 30px;
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+}
+.sessionMessage_img .icon{
+	display: inline-block;
+	color: #35cc62;
+	font-size: 55px;
+    line-height: 55px;
+}
+.sessionMessage_info{display: block; margin-bottom: 62px;}
+.sessionMessage_info h4{
+	color: #333;
+	display: block;
+	font-size: 38px;
+	font-weight: 600;
+	line-height: normal;
+	margin: 0 0 8px;
+}
+.sessionMessage_info span{
+	color: #666;
+	display: block;
+	font-size: 19px;
+	font-weight: 300;
+	line-height: normal;
+}
+
+.popover{border-color: #35cc62}
+.popover.bottom>.arrow{border-bottom-color: #35cc62;}
+.popover-content{
+	color: #35cc62;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+	font-weight: 300;
+	padding: 28px 20px;
+	text-align: center;
+}
 /* ------------------------------
   Utilities Settings
 ---------------------------------*/
@@ -514,6 +572,7 @@ button,a{outline:none;}
 	.height-auto{height: auto; overflow: hidden;}.height-100{height: 100%;}
 	.vAlign_top{vertical-align: top;}.vAlign_middle{vertical-align: middle;}.vAlign_bottom{vertical-align: bottom;}
 
+	.font-28{font-size: 28px;}
 /* ------------------------------
   Custome Datepicker Styles
 ---------------------------------*/
