@@ -18,9 +18,17 @@
 	}
 
 	// -------- Popover
-	if($(".C-optionCard").length){
+	if($("button.C-optionCard").length){
 		$('button.C-optionCard').popover({
 			placement : 'bottom',
+        	trigger : 'hover'
+		});
+	}
+
+	// -------- Popover
+	if($(".C-formGroup.st-alert").length){
+		$('.C-formGroup.st-alert .txtBox').popover({
+			placement : 'auto',
         	trigger : 'hover'
 		});
 	}
