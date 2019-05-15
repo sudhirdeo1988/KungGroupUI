@@ -1,0 +1,278 @@
+<!doctype html>
+<html class="no-js" lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="x-ua-compatible" content="ie=edge">
+		<title>Assesment :: Create</title>
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" type="image/x-icon" href="images/fav.png">
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/css-styles.css">
+	</head>
+    <body>
+    	<!-- ****** Header ****** -->
+    	<div class="C-header">
+    		<div class="container">
+    			<div class="row">
+    				<div class="col-sm-2 col-md-push-5 col-xs-12">
+    					<div class="C-logo">
+    						<a href="#"><img src="images/kungGroup-logo.png"></a>
+    					</div>
+    				</div>
+    				<div class="col-sm-5 col-md-pull-2 col-xs-6">
+    					<div class="C-headerNav side-left">
+							<ul>
+								<li class="st-active"><a href="javascript:void(0)">HOME</a></li>
+								<li><a href="javascript:void(0)">COMPANY PROFILE</a></li>
+								<li><a href="javascript:void(0)">MY PROFILE</a></li>
+							</ul>
+    					</div>
+    				</div>
+    				<div class="col-sm-5 col-xs-6">
+    					<div class="C-headerNav side-right">
+							<ul>
+								<li><a href="javascript:void(0)">My Colors</a></li>
+								<li><a href="javascript:void(0)">FAQ</a></li>
+								<li><a href="javascript:void(0)">SIGN OUT</a></li>
+							</ul>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    	<!-- ****** Header End ****** -->
+		
+		<!-- ****** Main Container ****** -->
+		<div class="C-container height-auto bgColoured">
+
+			<!-- ****** Heading Container ****** -->
+			<div class="containerHeading bgWhite">	
+				<div class="container">
+					<div class="row">
+						<div class="col-xs-12">
+							<h1 class="C-pageHeading">HOME</h1>
+							<h3 class="C-pageSubHeading">Company Name</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ****** Heading Container End ****** -->
+
+			<!-- ****** Card Container ****** -->
+			<div class="containerCard bgWhite">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-4 col-xs-12">
+							<button class="C-optionCard" 
+								data-content="To get started, send yourself an assessment">
+								<div class="cardImage"><i class="icon kg-user"></i></div>
+								<div class="titlePrimary">NEW SESSION</div>
+								<div class="titleSecondary">Start a new session</div>
+							</button>
+						</div>
+						<div class="col-sm-4 col-xs-12">
+							<button class="C-optionCard" 
+								data-content="To get started, send yourself an assessment"
+								data-toggle="modal" 
+								data-target="#createNewAssesment">
+								<div class="cardImage"><i class="icon kg-add"></i></div>
+								<div class="titlePrimary">NEW ASSESSMENT</div>
+								<div class="titleSecondary">Send an individual assessment</div>
+							</button>
+						</div>
+						<div class="col-sm-4 col-xs-12">
+							<button class="C-optionCard" 
+								data-content="To get started, send yourself an assessment">
+								<div class="cardImage"><i class="icon kg-copy"></i></div>
+								<div class="titlePrimary">REPORT DATABASE</div>
+								<div class="titleSecondary">Access existing reports</div>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- ****** Card Container End ****** -->
+
+			<!-- ****** Card Container ****** -->
+			<div class="containerCard">
+				<div class="container">
+					<div class="row">
+
+						<!-- ****** Card ****** -->
+						<div class="col-xs-12 margin25-bottom">
+							<div class="C-optionCard type--2">
+								<div class="clearfix titlePrimary">Active Sessions</div>
+								<div class="C-tableDiv">
+									<div class="tableDiv_row w-20 vAlign_bottom">
+										<span class="titleTurtary">Operations Team</span>
+									</div>
+									<div class="tableDiv_row w-20 vAlign_bottom">
+										<span class="titleTurtary">MAY 10</span>
+									</div>
+									<div class="tableDiv_row w-40 vAlign_bottom">
+										<div class="C-progressBar">
+											<span class="progressBar_Heading">COMPLETION STATUS</span>
+											<div class="progressBar">
+												<div class="progressTrack"></div>
+											</div>
+										</div>
+									</div>
+									<div class="tableDiv_row w-20 vAlign_bottom text-right">
+										<button class="btn linkCustome col-custome" data-toggle="modal" data-target="#sendReminder">
+											Send Reminder <i class="icon kg-angle-right"></i>
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- ****** Card End ****** -->
+
+						<!-- ****** Card ****** -->
+						<div class="col-md-6 col-sm-12">
+							<div class="C-optionCard type--2">
+								<div class="clearfix titlePrimary">Completed Sessions</div>
+								<div class="C-tableDiv margin10-bottom">
+									<div class="tableDiv_row w-20">
+										<span class="titleTurtary">FINANCE TEAM</span>
+									</div>
+									<div class="tableDiv_row w-20">
+										<span class="titleTurtary">MAY 10</span>
+									</div>
+								</div>
+								<div class="C-tableDiv">
+									<div class="tableDiv_row w-50">
+										<span class="titleTurtary">Legal Team</span>
+									</div>
+									<div class="tableDiv_row w-50">
+										<span class="titleTurtary">MAY 10</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- ****** Card End ****** -->
+
+						<!-- ****** Card ****** -->
+						<div class="col-md-6 col-sm-12">
+							<div class="C-optionCard type--2">
+								<div class="clearfix titlePrimary">Saved Sessions</div>
+								<div class="C-tableDiv  margin10-bottom">
+									<div class="tableDiv_row w-20">
+										<span class="titleTurtary">Admin Team</span>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- ****** Card End ****** -->
+
+					</div>
+				</div>
+			</div>
+			<!-- ****** Card Container End ****** -->
+
+
+		</div>
+		<!-- ****** Main Container End ****** -->
+
+		<!-- ****** Footer ****** -->
+		<div class="C-footer">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-6 col-xs-12 col-sm-push-6">
+						<div class="footer-nav">
+							<ul>
+								<li><a href="javascript:void(0)">Privacy Policy</a></li>
+								<li><a href="javascript:void(0)">Terms of Service</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-sm-6 col-xs-12 col-sm-pull-6">
+						<span class="footer-msg">© 2019 The Kung Group All Rights Reserved</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- ****** Footer End ****** -->
+
+
+		<!-- ****** Create session Modal ****** -->
+		<div class="modal fade modalCustome" id="createNewAssesment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		      </div>
+		      <div class="modal-body">
+				
+				<div class="clearfix C-container80 margin25-bottom">
+					
+					<!-- ****** session Data Div ****** -->
+					<div class="sessionData">
+
+						<h2 class="C-headingPrimary margin25-bottom font-28 text-center">Create New Assessment</h2>
+
+						<div class="row">
+							<div class="col-sm-8 col-xs-12">
+								<div class="text-left C-headingSecondary text-uppercase color-666">Participant Information</div>
+								<div class="form-group C-formGroup">
+									<input type="text" class="form-control txtBox st-dark" placeholder="First Name*" />
+								</div>
+
+								<div class="form-group C-formGroup">
+									<input type="text" class="form-control txtBox st-dark" placeholder="Last Name*" />
+								</div>
+
+								<div class="form-group C-formGroup state-error bgWhite">
+									<input type="email" class="form-control txtBox st-dark" placeholder="Email Address*">
+									<button class="clearPass"><i class="icon kg-android-close"></i></button>
+									<span class="errorMsg">This user has already taken the assessment. Would you like to re-send?</span>
+								</div>
+
+								<div class="form-group C-formGroup">
+									<div class="dropdown customeDropdown">
+									  <button id="dLabel" type="button" class="DD_button st-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									    Dropdown trigger
+									    <i class="icon kg-angle-down"></i>
+									  </button>
+									  <ul class="dropdown-menu" aria-labelledby="dLabel">
+									    <li><button class="dd_menu">Menu 1</button></li>
+									    <li><button class="dd_menu">Menu 1</button></li>
+									    <li><button class="dd_menu">Menu 1</button></li>
+									  </ul>
+									</div>
+								</div>
+
+								<div class="form-group C-formGroup">
+									<input type="text" class="form-control txtBox st-dark" placeholder="Compilation Deadline " />
+								</div>
+							</div>
+						</div>
+
+						<div class="clearfix text-right">
+							<button class="btn sm btnBordered">Cancel</button>
+							<button class="btn sm btnCustome">Send</button>
+						</div>
+					</div>
+					<!-- ****** session Data Div End ****** -->
+
+					<!-- ****** session Message Div ****** -->
+					<div class="sessionMessage">
+
+					</div>
+					<!-- ****** session Message Div End ****** -->
+
+				</div>
+
+		      </div>
+
+		    </div>
+		  </div>
+		</div>
+		<!-- ****** Create session Modal End ****** -->
+		
+		
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>

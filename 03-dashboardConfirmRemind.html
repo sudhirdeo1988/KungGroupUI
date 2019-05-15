@@ -3,7 +3,7 @@
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="x-ua-compatible" content="ie=edge">
-		<title>Dashboard</title>
+		<title>Dashboard :: Confirm Reminder</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="shortcut icon" type="image/x-icon" href="images/fav.png">
@@ -11,7 +11,6 @@
 		<link rel="stylesheet" href="css/css-styles.css">
 	</head>
     <body>
-
 
     	<!-- ****** Header ****** -->
     	<div class="C-header">
@@ -66,37 +65,25 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-sm-4 col-xs-12">
-							<button class="C-optionCard" 
-								data-container="body" 
-								data-trigger="hover"
-								data-toggle="popover" 
-								data-placement="bottom" 
+							<button class="C-optionCard text-center" 
 								data-content="To get started, send yourself an assessment">
-								<div class="cardImage"></div>
+								<div class="cardImage"><i class="icon kg-user"></i></div>
 								<div class="titlePrimary">NEW SESSION</div>
 								<div class="titleSecondary">Start a new session</div>
 							</button>
 						</div>
 						<div class="col-sm-4 col-xs-12">
-							<button class="C-optionCard" 
-								data-container="body" 
-								data-trigger="hover"
-								data-toggle="popover" 
-								data-placement="bottom" 
+							<button class="C-optionCard text-center" 
 								data-content="To get started, send yourself an assessment">
-								<div class="cardImage"></div>
+								<div class="cardImage"><i class="icon kg-add"></i></div>
 								<div class="titlePrimary">NEW ASSESSMENT</div>
 								<div class="titleSecondary">Send an individual assessment</div>
 							</button>
 						</div>
 						<div class="col-sm-4 col-xs-12">
-							<button class="C-optionCard" 
-								data-container="body" 
-								data-trigger="hover"
-								data-toggle="popover" 
-								data-placement="bottom" 
+							<button class="C-optionCard text-center" 
 								data-content="To get started, send yourself an assessment">
-								<div class="cardImage"></div>
+								<div class="cardImage"><i class="icon kg-copy"></i></div>
 								<div class="titlePrimary">REPORT DATABASE</div>
 								<div class="titleSecondary">Access existing reports</div>
 							</button>
@@ -131,7 +118,7 @@
 										</div>
 									</div>
 									<div class="tableDiv_row w-20 vAlign_bottom text-right">
-										<button class="btn linkCustome col-custome">
+										<button class="btn linkCustome col-custome" data-toggle="modal" data-target="#sendReminder">
 											Send Reminder <i class="icon kg-angle-right"></i>
 										</button>
 									</div>
@@ -205,6 +192,40 @@
 			</div>
 		</div>
 		<!-- ****** Footer End ****** -->
+
+
+		<!-- ****** Send Reminder Modal ****** -->
+		<div class="modal fade modalCustome" id="sendReminder" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		      </div>
+		      <div class="modal-body text-center">
+				
+				<div class="clearfix C-container80 margin25-bottom">
+
+					<!-- ****** Confirm Message Div ****** -->
+					<div class="sessionMessage">
+						<div class="sessionMessage_info">
+							<h4>Confirm</h4>
+							<span>Would you like to send a reminder to all outstanding participants?</span>
+						</div>
+						<div class="clearfix text-right">
+							<button class="btn btnBordered sm" data-dismiss="modal" aria-label="Close">Cancel</button>
+							<button class="btn btnCustome sm">Send</button>
+						</div>
+					</div>
+					<!-- ****** Send Reminder End ****** -->
+
+				</div>
+
+		      </div>
+
+		    </div>
+		  </div>
+		</div>
+		<!-- ****** Create session Modal End ****** -->
 		
 		
 		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>

@@ -19,7 +19,10 @@
 
 	// -------- Popover
 	if($(".C-optionCard").length){
-		$('.C-optionCard').popover();
+		$('button.C-optionCard').popover({
+			placement : 'bottom',
+        	trigger : 'hover'
+		});
 	}
 	
 	

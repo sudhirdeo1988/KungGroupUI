@@ -44,6 +44,12 @@ font-family: 'Montserrat', sans-serif;
 .kg-add:before {
   content: "\6c";
 }
+.kg-user:before {
+  content: "\6d";
+}
+.kg-copy:before {
+  content: "\6e";
+}
 
 /* ------------------------------
 2. Reset Styles
@@ -196,7 +202,15 @@ button,a{outline:none;}
 ---------------------------------*/
 .C-formGroup{
 	position: relative;
+	margin-bottom: 20px;
 	width: 100%;
+}
+.C-formGroup .formLabel{
+	color: #666666;
+	display: block;
+	font-size: 14px;
+	font-weight: 500;
+	margin-bottom: 8px;
 }
 .C-formGroup .txtBox{
 	color: #666666;
@@ -216,6 +230,7 @@ button,a{outline:none;}
 }
 .C-formGroup.bgWhite .txtBox{background-color: #ffffff;}
 .C-formGroup .txtBox::placeholder{color: #999999;}
+.C-formGroup .txtBox.st-dark::placeholder{color: #333333;}
 .C-formGroup.state-error .txtBox{border-color: #fa6557;}
 .C-formGroup.state-error .errorMsg{
 	color: #fa6557;
@@ -223,6 +238,7 @@ button,a{outline:none;}
 	font-size: 12px;
 	font-weight: normal;
 	text-align: left;
+	line-height: 15px;
 }
 .C-formGroup.state-error .clearPass{
 	background-color: transparent;
@@ -316,6 +332,7 @@ button,a{outline:none;}
     position: relative;
     border-radius: 4px;	
 }
+.customeDropdown .DD_button.st-dark{color: #333333;}
 .customeDropdown .DD_button .icon{
     color: #666666;
     position: absolute;
@@ -438,14 +455,30 @@ button,a{outline:none;}
 	outline: none;
 	height: auto;
     overflow: hidden;
+    width: 100%;
 }
 .C-optionCard .cardImage{
 	border:1px solid #d8d8d8;
 	height: 95px; 
 	margin:0 auto 25px; 
 	width: 95px; 
+	padding: 16px 7px;
+	text-align: center;
 	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
 }
+.C-optionCard .cardImage .icon{
+	color: #d8d8d8;
+	font-size: 58px;
+	line-height: 58px;
+	display: inline-block;
+	vertical-align: middle;
+	transition: all ease 0.3s;
+	-moz-transition: all ease 0.3s;
+	-webkit-transition: all ease 0.3s;
+}
+.C-optionCard:hover .cardImage .icon{color: #35cc62;}
 .C-optionCard .titlePrimary{
 	color: #333333;
 	display: block;
@@ -637,6 +670,7 @@ button,a{outline:none;}
   Utilities Settings
 ---------------------------------*/
 	.bgColoured{background-color: #fafafa;}.bgWhite{background-color: #fff;}
+	.color-666{color: #666666;}
 	.text-bold{font-weight:600;}.text-center{text-align:center;}
 	.text-uppercase{text-transform: uppercase;}
 	.nomargin{margin:0!important;}.margin0-bottom{margin-bottom:0px;}.margin10-bottom{margin-bottom:10px;}.margin25-bottom{margin-bottom:25px;}
