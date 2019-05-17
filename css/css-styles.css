@@ -689,6 +689,32 @@ button,a{outline:none;}
 }
 
 /* ------------------------------
+  Component :: Tabs
+---------------------------------*/
+
+.C-customeTabs .nav-tabs{ border-bottom: 1px solid rgba(0, 0, 0, 0.1); border-left: 1px solid rgba(0, 0, 0, 0.1);}
+.C-customeTabs .nav-tabs li a{
+	border-color: rgba(0, 0, 0, 0.1);
+	border-left: 0;
+	background-color: #fff;
+	color: #666666;
+	min-width: 200px;
+	padding: 15px;
+	text-align: center;
+	font-size: 16px;
+	font-weight: 500;
+	line-height: 15px;
+	margin-right: 0;
+	transition: all ease 0.3s;
+	border-radius: 0;
+}
+.C-customeTabs .nav-tabs li.active{margin-bottom: -2px;}
+.C-customeTabs .nav-tabs li.active a{border-bottom-color: transparent; color: #35cc62;}
+.C-customeTabs .nav-tabs li a:hover{background-color: #fff; color: #35cc62;}
+.C-customeTabs .tab-content{border: 1px solid rgba(0, 0, 0, 0.1); border-top: 0;}
+.C-customeTabs .tab-content .tab-pane{padding: 60px;}
+
+/* ------------------------------
   Utilities Settings
 ---------------------------------*/
 	.bgColoured{background-color: #fafafa;}.bgWhite{background-color: #fff;}
@@ -696,7 +722,8 @@ button,a{outline:none;}
 	.text-bold{font-weight:600;}.text-center{text-align:center;}
 	.text-uppercase{text-transform: uppercase;}
 	.nomargin{margin:0!important;}.margin0-bottom{margin-bottom:0px;}.margin10-bottom{margin-bottom:10px;}.margin25-bottom{margin-bottom:25px;}
-	.margin20-right{margin-right:20px;}.margin20-top{margin-top:20px;}.margin60-bottom{margin-bottom:60px;}
+	.margin20-right{margin-right:20px;}.margin20-top{margin-top:20px;}
+	.margin40-bottom{margin-bottom: 40px !important;}.margin60-bottom{margin-bottom:60px;}
 	.nopad{padding:0!important;}.pad20-right{padding-right:20px;}.pad20-left{padding-left:20px;}
 	.pad0-bottom{padding-bottom:0;}.pad10-bottom{padding-bottom:10px;}
 	.noborder{border:0;}
