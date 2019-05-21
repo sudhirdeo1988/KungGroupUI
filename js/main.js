@@ -32,6 +32,53 @@
         	trigger : 'hover'
 		});
 	}
+
+	// -------- Table Checkbutton
+	$('body').delegate('.checkBtn','click',function(){
+		var thisCheck = $(this); 
+		if(thisCheck.hasClass('st-checked')){
+			thisCheck.removeClass('st-checked');
+		}else{
+			thisCheck.addClass('st-checked');
+		}
+	});
+
+
+	// -------- Filter
+	$('body').delegate('.btnFilter','click',function(){
+		var thisCheck = $(this).parent('.btnSetting'); 
+		if(thisCheck.hasClass('st-open')){
+			thisCheck.removeClass('st-open');
+		}else{
+			thisCheck.addClass('st-open');
+		}
+	});
+	$('body').delegate('.closeFilter','click',function(){
+		$(this).parents('.btnSetting').removeClass('st-open');
+	});
+
+	// -------- Remove Filter Tags
+	$('body').delegate('.filterTag > button','click',function(){
+		var thisCheck = $(this).parent('.filterTag'); 
+		thisCheck.remove();
+	});
+
+
+	// -------- Filter
+	$('body').delegate('.btnSearch','click',function(){
+		var thisCheck = $(this).parents('.tableSettings'); 
+		if(thisCheck.hasClass('st-openSearch')){
+			thisCheck.removeClass('st-openSearch');
+		}else{
+			thisCheck.addClass('st-openSearch');
+		}
+	});
+
+	$('body').delegate('.hideSearch','click',function(){
+		var thisCheck = $(this).parents('.tableSettings'); 
+			thisCheck.removeClass('st-openSearch');
+	});
+
 	
 	
 })(jQuery);

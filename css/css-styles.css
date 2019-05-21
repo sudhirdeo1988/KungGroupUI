@@ -62,7 +62,9 @@ font-family: 'Montserrat', sans-serif;
 .kg-funnel:before {
   content: "\70";
 }
-
+.kg-skyline:before {
+  content: "\73";
+}
 /* ------------------------------
 2. Reset Styles
 ---------------------------------*/
@@ -643,14 +645,16 @@ button,a{outline:none;}
     line-height: 22px;
     vertical-align: middle;
 }
-.tableSettings .btnSetting.st-active .icon{color: #35cc62;}
+.tableSettings .btnSetting.st-active .icon,
+.tableSettings.st-openSearch .btnSearch .icon{color: #35cc62;}
 .tableSettings .searchData{
-	display: inline-block;
+	display: none;
 	position: relative;
 	padding-left: 30px;
 	height: 30px;
 	width: 300px;
 }
+.tableSettings.st-openSearch .searchData{display: inline-block;}
 .tableSettings .searchData:before{
 	color: #b3b3b3;
 	display: inline-block;
