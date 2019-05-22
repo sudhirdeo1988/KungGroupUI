@@ -12,7 +12,7 @@
 	        scrollCollapse: true,
 	        paging:         false,
 	        searching: false,
-    		ordering:  false,
+    		ordering:  true,
     		info: false
     	} );
 	}
