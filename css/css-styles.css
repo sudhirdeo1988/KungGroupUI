@@ -65,6 +65,13 @@ font-family: 'Montserrat', sans-serif;
 .kg-skyline:before {
   content: "\73";
 }
+.kg-arrow-down:before {
+  content: "\74";
+}
+.kg-arrow-up:before {
+  content: "\75";
+}
+
 /* ------------------------------
 2. Reset Styles
 ---------------------------------*/
@@ -160,6 +167,8 @@ button,a{outline:none;}
 @media only screen and (max-width: 768px) {
 	.containerHeading{padding: 15px 0;}
 }
+
+.c-inboxContainer{background-color: #fafafa; min-height: 192px; position: relative;}
 
 /* ------------------------------
   Headings Styles
@@ -691,9 +700,47 @@ button,a{outline:none;}
 	font-weight: 500;
 	margin-right: 20px;
 }
-table.dataTable thead .sorting:after,
-table.dataTable thead .sorting_asc:after{content: ''}
 
+table.dataTable thead .sorting:after{opacity: 0;}
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_desc:after{font-family:kunggroup; opacity: 1;    bottom: 16px;
+    right: 16px;}
+table.dataTable thead .sorting_asc:after{content: '\74';}
+table.dataTable thead .sorting_desc:after{content: '\75';}
+/*table.dataTable thead .sorting:after,
+table.dataTable thead .sorting_asc:after{content: ''}*/
+
+.C-dataTable.no--head td{border-bottom: 2px solid #fff; vertical-align: middle;}
+.C-dataTable.text--dark td{font-weight: 500;}
+.C-dataTable .btnTableAction{
+	background-color: transparent;
+	display: inline-block;
+	height: 28px;
+	width: 28px;
+	border:1px solid #666;
+	margin:0 5px;
+	padding: 0;
+	text-align: center;
+	border-radius: 100px;
+	-moz-border-radius: 100px;
+	-webkit-border-radius: 100px;
+}
+.C-dataTable .btnTableAction:before{
+	font-family: kunggroup;
+	content: "\6b";
+	font-size: 13px;
+	color: #666;
+	display: inline-block;
+	line-height: 23px;
+}
+.C-dataTable .btnTableAction.st-ok{border-color: #35cc62;}
+.C-dataTable .btnTableAction.st-ok:before{content: "\6b"; color: #35cc62;}
+.C-dataTable .btnTableAction.st-cancel{border-color: #fa6557;}
+.C-dataTable .btnTableAction.st-cancel:before{content: "\6a"; color: #fa6557;}
+
+/*
+	Filter
+*/
 .btnSetting .filterSection{
 	display: none;
 	background-color: #fafafa;

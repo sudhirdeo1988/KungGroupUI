@@ -13,7 +13,12 @@
 	        paging:         false,
 	        searching: false,
     		ordering:  true,
-    		info: false
+    		info: false,
+    		"order": [[ 1, "desc" ]],
+    		"columnDefs": [{
+				"targets": 0,
+				"orderable": false
+			}]
     	} );
 	}
 
