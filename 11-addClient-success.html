@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
-    <title>Database Reports :: Filter</title>
+    <title>System Admin :: Client Database</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="shortcut icon" type="image/x-icon" href="images/fav.png" />
@@ -51,8 +51,8 @@
         <div class="container">
           <div class="row">
             <div class="col-xs-12">
-              <h1 class="C-pageHeading">REPORT DATABASE</h1>
-              <h3 class="C-pageSubHeading">Company Name</h3>
+              <h1 class="C-pageHeading">CLIENT DATABASE</h1>
+              <h3 class="C-pageSubHeading">THE KUNG GROUP</h3>
             </div>
           </div>
         </div>
@@ -64,28 +64,15 @@
         <div class="container">
           <div class="row">
             <!-- ****** Table ****** -->
-            <div class="col-xs-12">
+            <div class="col-xs-10">
               <div class="C-optionCard pad10-bottom margin60-bottom">
                 <!-- ** Table Settings ** -->
                 <div class="tableSettings clearfix">
-                  <!-- ** Applied Filter ** -->
-                  <div class="filterData">
-                    <div class="filterTag">
-                      <span>Finance</span>
-                      <button></button>
-                    </div>
-                    <div class="filterTag">
-                      <span>Finance</span>
-                      <button></button>
-                    </div>
-                  </div>
-                  <!-- ** Applied Filter End ** -->
-
                   <div class="settingData">
                     <button class="btnSetting">
                       <i class="icon kg-search"></i>
                     </button>
-                    <div class="btnSetting st-open">
+                    <div class="btnSetting">
                       <button class="btnFilter">
                         <i class="icon kg-funnel"></i>
                       </button>
@@ -174,35 +161,24 @@
                   <table class="table">
                     <thead>
                       <tr>
-                        <th style="width: 5%;">
-                          <button class="checkBtn"></button>
-                        </th>
-                        <th style="width: 15%;">First Name</th>
-                        <th style="width: 15%;">Last Name</th>
-                        <th style="width: 20%;">Email Address</th>
-                        <th style="width: 15%;">Title</th>
-                        <th style="width: 15%;">Group</th>
-                        <th style="width: 15%;">Date Completed</th>
+                        <th style="width: 25%;">Company Name</th>
+                        <th style="width: 25%;">Industry</th>
+                        <th style="width: 25%;">Size</th>
+                        <th style="width: 25%;">Active Sessions</th>
                       </tr>
                     </thead>
                     <tbody>
                       <tr>
-                        <td><button class="checkBtn"></button></td>
-                        <td>John</td>
-                        <td>Smith</td>
                         <td>name@company.com</td>
                         <td>VP, Operations</td>
-                        <td>Operations</td>
-                        <td>05/01/2019</td>
+                        <td>100 - 200</td>
+                        <td>7</td>
                       </tr>
                       <tr>
-                        <td><button class="checkBtn st-checked"></button></td>
-                        <td>John</td>
-                        <td>Smith</td>
                         <td>name@company.com</td>
                         <td>VP, Operations</td>
-                        <td>Operations</td>
-                        <td>05/01/2019</td>
+                        <td>100 - 200</td>
+                        <td>7</td>
                       </tr>
                     </tbody>
                   </table>
@@ -210,6 +186,17 @@
               </div>
             </div>
             <!-- ****** Table End ****** -->
+
+            <div class="col-xs-2">
+              <button
+                class="addClient"
+                data-toggle="modal"
+                data-target="#successAddClient"
+              >
+                <div class="clientBtn"><i class="icon kg-add"></i></div>
+                <span>New Client</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -238,6 +225,55 @@
       </div>
     </div>
     <!-- ****** Footer End ****** -->
+
+    <!-- ****** successAssesment Modal ****** -->
+    <div
+      class="modal fade modalCustome"
+      id="successAddClient"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="clearfix C-container80 margin25-bottom">
+              <!-- ****** session Message Div ****** -->
+              <div class="sessionMessage">
+                <div class="sessionMessage_img">
+                  <i class="icon kg-tick"></i>
+                </div>
+                <div class="sessionMessage_info">
+                  <h4>Success</h4>
+                  <span>Client successfully added. The Organizer will receive an email invitation shortly.</span>
+                </div>
+                <div class="clearfix">
+                  <button
+                    class="btn btnCustome"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    Ok
+                  </button>
+                </div>
+              </div>
+              <!-- ****** successAssesment Div End ****** -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ****** Create session Modal End ****** -->
 
     <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>

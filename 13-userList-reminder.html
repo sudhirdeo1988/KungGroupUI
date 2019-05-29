@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>User List</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" type="image/x-icon" href="images/fav.png" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/css-styles.css" />
+  </head>
+  <body>
+    <!-- ****** Header ****** -->
+    <div class="C-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2 col-md-push-5 col-xs-12">
+            <div class="C-logo">
+              <a href="#"><img src="images/kungGroup-logo.png"/></a>
+            </div>
+          </div>
+          <div class="col-sm-5 col-md-pull-2 col-xs-6">
+            <div class="C-headerNav side-left">
+              <ul>
+                <li><a href="javascript:void(0)">HOME</a></li>
+                <li><a href="javascript:void(0)">COMPANY PROFILE</a></li>
+                <li class="st-active">
+                  <a href="javascript:void(0)">MY PROFILE</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-5 col-xs-6">
+            <div class="C-headerNav side-right">
+              <ul>
+                <li><a href="javascript:void(0)">My Colors</a></li>
+                <li><a href="javascript:void(0)">FAQ</a></li>
+                <li><a href="javascript:void(0)">SIGN OUT</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ****** Header End ****** -->
+
+    <!-- ****** Main Container ****** -->
+    <div class="C-container height-auto bgColoured">
+      <!-- ****** Heading Container ****** -->
+      <div class="containerHeading bgWhite">
+        <div class="container">
+          <div class="row">
+            <div class="col-xs-12">
+              <h1 class="C-pageHeading">CLIENT PROFILE</h1>
+              <h3 class="C-pageSubHeading">Company Name</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ****** Heading Container End ****** -->
+
+      <!-- ****** Card Container ****** -->
+      <div class="containerCard bgWhite margin0-bottom">
+        <div class="container">
+          <!-- ****** Profile Container ****** -->
+          <div class="profileContainer">
+            <div class="C-customeTabs">
+              <!-- Nav tabs -->
+              <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation">
+                  <a
+                    href="#home"
+                    aria-controls="home"
+                    role="tab"
+                    data-toggle="tab"
+                    >Groups</a
+                  >
+                </li>
+                <li role="presentation">
+                  <a
+                    href="#profile"
+                    aria-controls="profile"
+                    role="tab"
+                    data-toggle="tab"
+                    >Company Information</a
+                  >
+                </li>
+                <li role="presentation" class="active">
+                  <a
+                    href="#userList"
+                    aria-controls="userList"
+                    role="tab"
+                    data-toggle="tab"
+                    >User List</a
+                  >
+                </li>
+              </ul>
+
+              <!-- Tab panes -->
+              <div class="tab-content">
+                <!-- ****** Tab Body panel ****** -->
+                <div role="tabpanel" class="tab-pane" id="home">
+                  <div class="row">
+                    <!-- ****** Table ****** -->
+                    <div class="col-xs-12">
+                      <div class="C-optionCard pad10-bottom margin60-bottom">
+                        <!-- ** Table Settings ** -->
+                        <div class="tableSettings clearfix">
+                          <div class="settingData">
+                            <button
+                              class="btn linkCustome pull-right text-uppercase"
+                            >
+                              Edit <i class="icon kg-add"></i>
+                            </button>
+                          </div>
+                        </div>
+                        <!-- ** Table Settings End ** -->
+
+                        <div
+                          class="C-dataTable st-colored fix--head margin60-bottom"
+                        >
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th style="width: 40%;">Group Name</th>
+                                <th style="width: 30%;">Team Lead</th>
+                                <th style="width: 30%;"># of Members</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>name@company.com</td>
+                                <td>VP, Operations</td>
+                                <td>7</td>
+                              </tr>
+                              <tr>
+                                <td>name@company.com</td>
+                                <td>VP, Operations</td>
+                                <td>7</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ****** Table End ****** -->
+                  </div>
+                </div>
+                <!-- ****** Tab Body panel End ****** -->
+
+                <!-- ****** Tab Body panel ****** -->
+                <div role="tabpanel" class="tab-pane" id="profile">
+                  <div class="C-optionCard pad0-bottom clearfix">
+                    <div class="row">
+                      <!-- ****** Form ****** -->
+                      <div class="col-md-5 col-sm-6 col-xs-12">
+                        <div class="clearfix titlePrimary margin40-bottom">
+                          COMPANY INFORMATION
+                          <button
+                            class="btn linkCustome pull-right text-uppercase"
+                          >
+                            Edit
+                          </button>
+                        </div>
+                        <div class="clearfix">
+                          <div class="form-group C-formGroup">
+                            <label class="formLabel">Company Name</label>
+                            <input
+                              type="text"
+                              class="form-control txtBox"
+                              placeholder="Company Name"
+                            />
+                          </div>
+
+                          <div class="form-group C-formGroup">
+                            <label class="formLabel">Address</label>
+                            <input
+                              type="text"
+                              class="form-control txtBox"
+                              placeholder="Street Address"
+                            />
+                          </div>
+
+                          <div class="form-group C-formGroup">
+                            <input
+                              type="text"
+                              class="form-control txtBox"
+                              placeholder="city"
+                            />
+                          </div>
+
+                          <div class="row">
+                            <div class="col-sm-6 col-xs-12">
+                              <div class="form-group C-formGroup">
+                                <div class="dropdown customeDropdown">
+                                  <button
+                                    id="dLabel"
+                                    type="button"
+                                    class="DD_button st-dark"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                  >
+                                    State
+                                    <i class="icon kg-angle-down"></i>
+                                  </button>
+                                  <ul
+                                    class="dropdown-menu"
+                                    aria-labelledby="dLabel"
+                                  >
+                                    <li>
+                                      <button class="dd_menu">Menu 1</button>
+                                    </li>
+                                    <li>
+                                      <button class="dd_menu">Menu 1</button>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-sm-6 col-xs-12">
+                              <div class="form-group C-formGroup">
+                                <input
+                                  type="text"
+                                  class="form-control txtBox"
+                                  placeholder="ZIP code"
+                                />
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="form-group C-formGroup">
+                            <div class="dropdown customeDropdown">
+                              <button
+                                id="dLabel"
+                                type="button"
+                                class="DD_button st-dark"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                Country
+                                <i class="icon kg-angle-down"></i>
+                              </button>
+                              <ul
+                                class="dropdown-menu"
+                                aria-labelledby="dLabel"
+                              >
+                                <li><button class="dd_menu">Menu 1</button></li>
+                                <li><button class="dd_menu">Menu 1</button></li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <div class="form-group C-formGroup">
+                            <label class="formLabel">Your Phone Number</label>
+                            <input
+                              type="text"
+                              class="form-control txtBox"
+                              placeholder="Your Phone Number"
+                            />
+                          </div>
+
+                          <div class="form-group C-formGroup">
+                            <label class="formLabel">Year Founded</label>
+                            <input
+                              type="text"
+                              class="form-control txtBox"
+                              placeholder="Year"
+                            />
+                          </div>
+
+                          <div class="form-group C-formGroup">
+                            <label class="formLabel">Industry</label>
+                            <div class="dropdown customeDropdown">
+                              <button
+                                id="dLabel"
+                                type="button"
+                                class="DD_button st-dark"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                Please Make a Selection
+                                <i class="icon kg-angle-down"></i>
+                              </button>
+                              <ul
+                                class="dropdown-menu"
+                                aria-labelledby="dLabel"
+                              >
+                                <li><button class="dd_menu">Menu 1</button></li>
+                                <li><button class="dd_menu">Menu 1</button></li>
+                              </ul>
+                            </div>
+                          </div>
+
+                          <div class="form-group C-formGroup">
+                            <label class="formLabel">Company Size</label>
+                            <div class="dropdown customeDropdown">
+                              <button
+                                id="dLabel"
+                                type="button"
+                                class="DD_button st-dark"
+                                data-toggle="dropdown"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                              >
+                                Please Make a Selection
+                                <i class="icon kg-angle-down"></i>
+                              </button>
+                              <ul
+                                class="dropdown-menu"
+                                aria-labelledby="dLabel"
+                              >
+                                <li><button class="dd_menu">Menu 1</button></li>
+                                <li><button class="dd_menu">Menu 1</button></li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- ****** Form End ****** -->
+
+                      <!-- ****** Form ****** -->
+                      <div class="col-md-5 col-md-offset-2 col-sm-6 col-xs-12">
+                        <div class="clearfix titlePrimary margin40-bottom">
+                          BILLING CONTACT
+                          <button
+                            class="btn linkCustome pull-right text-uppercase"
+                          >
+                            Edit
+                          </button>
+                        </div>
+                        <div class="clearfix">
+                          <div class="form-group C-formGroup">
+                            <label class="formLabel">Billing Contact</label>
+                            <input
+                              type="text"
+                              class="form-control txtBox"
+                              placeholder="First Name Last Name"
+                            />
+                          </div>
+
+                          <div class="form-group C-formGroup">
+                            <label class="formLabel"
+                              >Billing Contact Email Address</label
+                            >
+                            <input
+                              type="email"
+                              class="form-control txtBox"
+                              placeholder="Email Address"
+                            />
+                          </div>
+
+                          <div class="form-group C-formGroup">
+                            <label class="formLabel"
+                              >Billing Contact Phone Number</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control txtBox"
+                              placeholder="(555) 555-5555"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                      <!-- ****** Form End ****** -->
+                    </div>
+
+                    <div class="text-right">
+                      <button class="btn btnCustome sm">
+                        <i class="icon kg-android-arrow-forward"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <!-- ****** Tab Body panel End ****** -->
+
+                <!-- ****** Tab Body panel ****** -->
+                <div role="tabpanel" class="tab-pane active" id="userList">
+                  <div class="row">
+                    <!-- ****** Table ****** -->
+                    <div class="col-xs-12">
+                      <div class="C-optionCard pad10-bottom margin60-bottom">
+                        <!-- ** Table Settings ** -->
+                        <div class="tableSettings clearfix">
+                          <div class="settingData">
+                            <button
+                              class="btn linkCustome pull-right text-uppercase"
+                              data-toggle="modal"
+                              data-target="#sendReminder"
+                            >
+                              RE-SEND INVITATION
+                            </button>
+                            <button
+                              class="btn linkCustome pull-right text-uppercase margin20-right"
+                            >
+                              Edit
+                            </button>
+                          </div>
+                        </div>
+                        <!-- ** Table Settings End ** -->
+
+                        <div
+                          class="C-dataTable st-colored fix--head"
+                        >
+                          <table class="table">
+                            <thead>
+                              <tr>
+                                <th style="width: 5%;"></th>
+                                <th style="width: 20%;">First Name</th>
+                                <th style="width: 20%;">Last Name</th>
+                                <th style="width: 20%;">Title</th>
+                                <th style="width: 15%;">User Type</th>
+                                <th style="width: 20%;">Email Address</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                              <tr>
+                                <td>
+                                  <button class="checkBtn st-checked"></button>
+                                </td>
+                                <td>Nancy</td>
+                                <td>Pelosi</td>
+                                <td>VP, Human Resources</td>
+                                <td>Session Organizer</td>
+                                <td>nancy@abc.com</td>
+                              </tr>
+                              <tr>
+                                <td><button class="checkBtn"></button></td>
+                                <td>Nancy</td>
+                                <td>Pelosi</td>
+                                <td>VP, Human Resources</td>
+                                <td>Session Organizer</td>
+                                <td>nancy@abc.com</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- ****** Table End ****** -->
+                  </div>
+                </div>
+                <!-- ****** Tab Body panel End ****** -->
+              </div>
+            </div>
+          </div>
+          <!-- ****** Profile Container End ****** -->
+        </div>
+      </div>
+      <!-- ****** Card Container End ****** -->
+    </div>
+    <!-- ****** Main Container End ****** -->
+
+    <!-- ****** Footer ****** -->
+    <div class="C-footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-6 col-xs-12 col-sm-push-6">
+            <div class="footer-nav">
+              <ul>
+                <li><a href="javascript:void(0)">Privacy Policy</a></li>
+                <li><a href="javascript:void(0)">Terms of Service</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-sm-6 col-xs-12 col-sm-pull-6">
+            <span class="footer-msg"
+              >© 2019 The Kung Group All Rights Reserved</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ****** Footer End ****** -->
+
+    <!-- ****** Send Reminder Modal ****** -->
+    <div
+      class="modal fade modalCustome"
+      id="sendReminder"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="myModalLabel"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body text-center">
+            <div class="clearfix C-container80 margin25-bottom">
+              <!-- ****** Confirm Message Div ****** -->
+              <div class="sessionMessage">
+                  <div class="sessionMessage_img">
+                    <i class="icon kg-tick"></i>
+                  </div>
+                  <div class="sessionMessage_info">
+                    <h4>Success</h4>
+                    <span>Email invitation sent</span>
+                  </div>
+                  <div class="clearfix">
+                    <button
+                      class="btn btnCustome"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      Ok
+                    </button>
+                  </div>
+                </div>
+              <!-- ****** Send Reminder End ****** -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ****** Create session Modal End ****** -->
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+  </body>
+</html>
