@@ -71,6 +71,9 @@ font-family: 'Montserrat', sans-serif;
 .kg-arrow-up:before {
   content: "\75";
 }
+.kg-graph:before {
+  content: "\76";
+}
 
 /* ------------------------------
 2. Reset Styles
@@ -106,6 +109,7 @@ button,a{outline:none;}
     background-size: contain;
 }
 .C-container80{width: 80%; margin: 0 auto;}
+.C-containerModal{margin: 0 30px;}
 .C-formContainer{
 	position: relative;
 	display: table;
@@ -152,6 +156,7 @@ button,a{outline:none;}
 }
 @media only screen and (max-width: 768px) {
 	.C-container{height: auto; overflow: hidden; margin:50px 0 0;}
+	.C-containerModal{margin: 0;}
 	.C-footer .footer-msg{text-align: center; font-size: 12px;}
 	.C-footer .footer-nav{text-align: left; margin-bottom: 20px;}
 	.C-footer .footer-nav li{display: block; text-align: left; margin: 0 0 10px;}
@@ -729,7 +734,6 @@ button,a{outline:none;}
     color: #666666;
     font-size: 20px;
     line-height: 22px;
-    vertical-align: middle;
 }
 .tableSettings .btnSetting.st-active .icon,
 .tableSettings.st-openSearch .btnSearch .icon{color: #35cc62;}
@@ -762,6 +766,52 @@ button,a{outline:none;}
     font-size: 16px;
     color: #666;
 }
+.tableSettings .tableTitle{
+	display: inline-block;
+	text-align: center;
+	width: calc(100% - 100px);
+}
+.tableSettings .tableTitle .tableTitle_dd{display: inline-block;}
+.tableSettings .tableTitle button{
+	background-color: transparent;
+	border: 0;
+	padding: 0;
+}
+.tableSettings .tableTitle span{
+	display: inline-block;
+	font-size: 21px;
+	color: #333;
+	line-height: 25px;
+	text-transform: uppercase;
+	font-weight: 600;
+	vertical-align: middle;
+}
+.tableSettings .tableTitle .icon{
+	color: #333;
+	display: inline-block;
+	font-size: 22px;
+	line-height: 18px;
+	margin-left: 5px;
+	vertical-align: middle;
+}
+.tableSettings .tableTitle_dd ul{
+	width: 100%;
+	padding: 0;
+	border-radius: 0;
+	-moz-border-radius: 0;
+	-webkit-border-radius: 0;
+}
+.tableSettings .tableTitle_dd ul li .linkOpt{
+	display: block;
+	font-size: 16px;
+	line-height: 20px;
+	padding: 7px 14px;
+	border: 0;
+	width: 100%;
+	text-align: left;
+}
+.tableSettings .tableTitle_dd ul li .linkOpt:hover{background-color: #e6e6e6;}
+
 .tableSelectedRow{
 	border:2px solid #35cc62;
 	display: block;
@@ -1065,12 +1115,97 @@ table.dataTable thead .sorting_asc:after{content: ''}*/
 .C-customeTabs .tab-content{border: 1px solid rgba(0, 0, 0, 0.1); border-top: 0;}
 .C-customeTabs .tab-content .tab-pane{padding: 60px;}
 
+
+/* ------------------------------
+  Component :: Team Popup
+---------------------------------*/
+.nameListing{
+	display: block;
+	position: relative;
+	max-height: 250px;
+}
+.nameListing ul{display: block; margin: 0; padding: 0;}
+.nameListing ul li{
+	display: block;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1.64;
+  letter-spacing: 0.1px;
+	color: #999999;
+	margin-bottom: 5px;
+	padding-right: 30px;
+	position: relative;
+}
+.st-action{
+	border: 0;
+	position: absolute;
+	top:0;
+	right: 0;
+	height: 23px;
+	width: 23px;
+	padding: 0;
+	text-align: center;
+}
+.st-action .icon{
+	color: #999;
+	display: inline-block;
+	font-size: 14px;
+	vertical-align: middle;
+	line-height: 14px;
+}
+
+.searchTeamData{
+	display: block;
+	position: relative;
+	padding-left: 30px;
+	height: 30px;
+	width: 240px;
+	margin-bottom: 35px;
+}
+.searchTeamData:before{
+	color: #b3b3b3;
+	display: inline-block;
+	position: absolute;
+	font-family:kunggroup;
+	content: "\6f";
+	font-size: 18px;
+	top: 4px;
+	left: 5px;
+}
+.searchTeamData .txtSearch{
+    display: inline-block;
+    border: 0;
+    float: left;
+    width: 180px;
+    height: 30px;
+    border-bottom: 1px solid #b3b3b3;
+    outline: none;
+    font-size: 16px;
+    color: #666;
+}
+.searchTeamData .btnSetting {
+	background-color: transparent;
+	border: 0;
+	display: inline-block;
+	padding: 4px;
+	height: 30px;
+	width: 30px;
+	text-align: center;
+	position: relative;
+}
+.searchTeamData .btnSetting .icon {
+	display: block;
+	color: #666666;
+	font-size: 20px;
+	line-height: 22px;
+}
+
 /* ------------------------------
   Utilities Settings
 ---------------------------------*/
 	.bgColoured{background-color: #fafafa;}.bgWhite{background-color: #fff;}
 	.color-666{color: #666666;}
-	.text-bold{font-weight:600;}.text-center{text-align:center;}
+	.text-bold{font-weight:600 !important;}.text-center{text-align:center;}
 	.text-uppercase{text-transform: uppercase;}
 	.nomargin{margin:0!important;}.margin0-bottom{margin-bottom:0px;}.margin10-bottom{margin-bottom:10px;}.margin25-bottom{margin-bottom:25px;}
 	.margin20-right{margin-right:20px;}.margin20-top{margin-top:20px;}
