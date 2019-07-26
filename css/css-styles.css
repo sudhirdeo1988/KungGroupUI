@@ -74,6 +74,9 @@ font-family: 'Montserrat', sans-serif;
 .kg-graph:before {
   content: "\76";
 }
+.kg-networking:before {
+  content: "\77";
+}
 
 /* ------------------------------
 2. Reset Styles
@@ -602,6 +605,16 @@ button,a{outline:none;}
 /* ------------------------------
   Component :: Dashboard Card
 ---------------------------------*/
+.C-row{
+	display: flex;
+  flex-wrap: wrap;
+}
+.C-row .C-col{
+	flex-basis: 0;
+	flex-grow: 1;
+	max-width: 100%;
+	text-align: center;
+}
 .containerCard{margin-bottom: 35px;}
 .C-optionCard{
 	background-color: #fff;
