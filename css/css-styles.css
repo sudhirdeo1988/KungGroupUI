@@ -93,17 +93,24 @@ body {
 	font-style: normal;
 	line-height: 22px;
 	position:relative;
-	height:100%;
+	min-height:100%;
 	background:#fff;
+	display: flex;
+	flex-direction: column;
+	overflow: auto;
 }
 button,a{outline:none;}
 
 /* ------------------------------
   Containers Styles
 ---------------------------------*/
+.container,
+.container-fluid{max-width: 1024px;}
 .C-container{
+	background-color: #fff;
 	height: 100%;
 	position: relative;
+	flex-grow: 1;
 }
 .C-container.bgImage{
 	background-image: url('../images/kungGroup-bg.png');
@@ -126,13 +133,15 @@ button,a{outline:none;}
 
 .C-footer{
 	position: relative;
-	padding: 30px 0;
+	padding: 12px 0;
 	line-height: 23px;
+	align-self: flex-end;
+	width: 100%;
 }
 .C-footer .footer-msg{
 	display: block;
 	color: #999999;
-	font-size: 14px;
+	font-size: 10px;
 	font-weight: 500;
 }
 .C-footer .footer-nav{text-align: right;}
@@ -144,13 +153,13 @@ button,a{outline:none;}
 }
 .C-footer .footer-nav li{
 	display: inline-block;
-	margin: 0 0 0 40px;
+	margin: 0 0 0 28px;
 }
 .C-footer .footer-nav li a{
 	color: #333333;
 	display: block;
-	font-size: 14px;
-	font-weight: 500;
+	font-size: 10px;
+	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 	line-height: 23px;
@@ -169,7 +178,7 @@ button,a{outline:none;}
 .containerHeading{
 	display: block;
 	position: relative;
-	padding: 63px 0;
+	padding: 20px 0 45px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -227,7 +236,7 @@ button,a{outline:none;}
 .C-pageHeading{
 	color: #333333;
 	display: block;
-	font-size: 38px;
+	font-size: 26px;
 	font-weight: 600;
 	line-height: normal;
 	letter-spacing: normal;
@@ -238,7 +247,7 @@ button,a{outline:none;}
 .C-pageSubHeading{
 	color: #666666;
 	display: block;
-	font-size: 19px;
+	font-size: 16px;
 	font-weight: 300;
 	line-height: normal;
 	letter-spacing: normal;
@@ -257,15 +266,16 @@ button,a{outline:none;}
 ---------------------------------*/
 .C-formGroup{
 	position: relative;
-	margin-bottom: 20px;
+	margin-bottom: 12px;
 	width: 100%;
 }
 .C-formGroup .formLabel{
 	color: #666666;
 	display: block;
-	font-size: 14px;
+	font-size: 12px;
+	line-height: 14px;
 	font-weight: 500;
-	margin-bottom: 8px;
+	margin-bottom: 2px;
 }
 .C-formGroup .formLabel.sm{
 	text-align: left;
@@ -275,12 +285,13 @@ button,a{outline:none;}
 }
 .C-formGroup .txtBox{
 	color: #666666;
-	font-size: 14px;
+	font-size: 12px;
 	font-weight: 500;
-	height: 48px;
+	height: 39px;
+	line-height: 17px;
 	border: solid 1px rgba(0, 0, 0, 0.1);
 	background-color: rgba(0, 0, 0, 0.01);
-	padding: 16px 20px;
+	padding: 11px 20px;
 	letter-spacing: 0.5px;
 	box-shadow: none;
 	-moz-box-shadow: none;
@@ -322,7 +333,7 @@ button,a{outline:none;}
 .C-formGroup .c-addField .addBtn{
 	border: 0;
 	position: absolute;
-	top: 7px;
+	top: 4px;
 	right: 0;
 	height: 30px;
 	padding: 0;
@@ -349,12 +360,12 @@ button,a{outline:none;}
 .btn.btnCustome{
 	background-color: #35cc62;
 	color: #ffffff;
-	font-size: 14px;
-	font-weight: 500;
-	height: 48px;
+	font-size: 12px;
+	font-weight: 600;
+	height: 36px;
 	width: 213px;
-	line-height: 20px;
-	padding: 12px 40px;
+	line-height: 14px;
+	padding: 11px 40px;
 	text-transform: uppercase;
 	outline: none;
 	border-radius: 2px;
@@ -365,12 +376,12 @@ button,a{outline:none;}
 	background-color: transparent;
 	border:1px solid #35cc62;
 	color: #35cc62;
-	font-size: 14px;
-	font-weight: 500;
-	height: 48px;
+	font-size: 12px;
+	font-weight: 600;
+	height: 36px;
 	width: 213px;
-	line-height: 20px;
-	padding: 12px 40px;
+	line-height: 14px;
+	padding: 11px 40px;
 	text-transform: uppercase;
 	outline: none;
 	border-radius: 2px;
@@ -378,13 +389,14 @@ button,a{outline:none;}
 	-webkit-border-radius: 2px;
 }
 .btn.btnCustome.sm,
-.btn.btnBordered.sm{width: auto; min-width: 130px;}
+.btn.btnBordered.sm{width: auto; min-width: 100px;}
 .btn.btnCustome .icon{
-    color: #fff;
-    display: inline-block;
-    font-size: 22px;
-    line-height: normal;
-    vertical-align: middle;
+	color: #fff;
+	display: inline-block;
+	font-size: 18px;
+	vertical-align: middle;
+	line-height: 13px;
+	margin-top: -2px;
 }
 .btn.linkCustome{
 	background-color: transparent;
@@ -457,14 +469,14 @@ button,a{outline:none;}
 .customeDropdown .DD_button{
     display: block;
     color: #666666;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
-    height: 48px;
+		height: 39px;
+		line-height: 15px;
     border: solid 1px rgba(0, 0, 0, 0.1);
     background-color: rgba(0, 0, 0, 0.01);
-    padding: 16px 20px;
+    padding: 11px 20px;
     letter-spacing: 0.5px;
-    line-height: 16px;
     width: 100%;
     text-align: left;
     position: relative;
@@ -472,12 +484,12 @@ button,a{outline:none;}
 }
 .customeDropdown .DD_button.st-dark{color: #333333;}
 .customeDropdown .DD_button .icon{
-    color: #666666;
-    position: absolute;
-    display: inline-block;
-    font-size: 20px;
-    top: 14px;
-    right: 10px;
+	color: #666666;
+	position: absolute;
+	display: inline-block;
+	font-size: 18px;
+	top: 10px;
+	right: 5px;
 }
 .customeDropdown .dropdown-menu{width: 100%;}
 .customeDropdown .dropdown-menu li{display: block; border-bottom: solid 1px rgba(0, 0, 0, 0.1);}
@@ -565,8 +577,8 @@ button,a{outline:none;}
 ---------------------------------*/
 .C-header{
 	display: block;
-	height: 80px;
-	padding: 25px 0;
+	height: 76px;
+	padding: 23px 0;
 	position: relative;
 }
 .C-headerNav ul{
@@ -580,8 +592,8 @@ button,a{outline:none;}
 	border-bottom: 1px solid transparent;
 	color: #333333;
 	display: block;
-	font-size: 14px;
-	font-weight: 500;
+	font-size: 12px;
+	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 0.5px;
 	line-height: 23px;
@@ -595,8 +607,8 @@ button,a{outline:none;}
 .C-headerNav li a:hover{border-color: #35cc62;}
 .C-headerNav.side-left{text-align: left;}
 .C-headerNav.side-right{text-align: right;}
-.C-headerNav.side-left li{margin-right: 40px;}
-.C-headerNav.side-right li{margin-left: 40px;}
+.C-headerNav.side-left li{margin-right: 36px;}
+.C-headerNav.side-right li{margin-left: 36px;}
 
 .C-logo{
 	display: block;
@@ -642,7 +654,7 @@ button,a{outline:none;}
 	border:0;
 	display: block;
 	position: relative;
-	padding: 20px 20px 50px;
+	padding: 0 20px 20px;
 	outline: none;
 	height: auto;
     width: 100%;
@@ -672,9 +684,9 @@ button,a{outline:none;}
 .C-optionCard .titlePrimary{
 	color: #333333;
 	display: block;
-	font-size: 21px;
+	font-size: 16px;
 	font-weight: 500;
-	line-height: normal;
+	line-height: 18px;
 	margin-bottom: 16px;
 	text-transform: uppercase;
 }
@@ -1134,9 +1146,9 @@ table.dataTable thead .sorting_asc:after{content: ''}*/
 	background-color: #fff;
 	color: #666666;
 	min-width: 200px;
-	padding: 15px;
+	padding: 12px 15px;
 	text-align: center;
-	font-size: 16px;
+	font-size: 12px;
 	font-weight: 500;
 	line-height: 15px;
 	margin-right: 0;
@@ -1147,7 +1159,7 @@ table.dataTable thead .sorting_asc:after{content: ''}*/
 .C-customeTabs .nav-tabs li.active a{border-bottom-color: transparent; color: #35cc62;}
 .C-customeTabs .nav-tabs li a:hover{background-color: #fff; color: #35cc62;}
 .C-customeTabs .tab-content{border: 1px solid rgba(0, 0, 0, 0.1); border-top: 0;}
-.C-customeTabs .tab-content .tab-pane{padding: 60px;}
+.C-customeTabs .tab-content .tab-pane{padding: 45px;}
 
 
 /* ------------------------------
