@@ -77,6 +77,9 @@ font-family: 'Montserrat', sans-serif;
 .kg-networking:before {
   content: "\77";
 }
+.kg-edit:before {
+  content: "\78";
+}
 
 /* ------------------------------
 2. Reset Styles
